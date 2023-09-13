@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace csharp_abstract_animals
 {
-    public class Cane : Animale
+    public class Passerotto : Animale
     {
         public override void CosaMangia()
         {
-            Console.WriteLine("Carne, Croccantini, Frutta");
+            Console.WriteLine("Fiocchi d'avena, frutta, uvetta, noce e nocciole");
         }
 
         public override void Verso()
         {
-            Console.WriteLine("Bau Bau!!");
+            Console.WriteLine("Cip Cip!!");
         }
     }
 }
