@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace csharp_abstract_animals
 {
-    public class Delfino : Animale
+    public class Delfino : Animale, INuotante
     {
         public override void CosaMangia()
         {
@@ -21,6 +21,16 @@ namespace csharp_abstract_animals
         public override int numeroZampe()
         {
             return 0;
+        }
+
+        public void Nuota()
+        {
+            Console.WriteLine("Sto Nuotando!!");
+        }
+
+        public int NumeroPinne()
+        {
+            return 4;
         }
     }
 }

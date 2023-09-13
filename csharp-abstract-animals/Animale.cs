@@ -24,5 +24,14 @@ namespace csharp_abstract_animals
             Console.WriteLine($"{this.GetType().Name} ha {this.numeroZampe()} zampe \n");
         }
 
+        public void FaiVolare(IVolante volante)
+        {
+            volante.Vola();
+        }
+        public void FaiNuotare(INuotante nuotante)
+        {
+            nuotante.Nuota();
+        }
+
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace csharp_abstract_animals
 {
-    public class Aquila : Animale
+    public class Aquila : Animale, IVolante
     {
         public override void CosaMangia()
         {
@@ -23,6 +23,15 @@ namespace csharp_abstract_animals
             Console.WriteLine("Graa graa!!");
         }
 
+        public void Vola()
+        {
+            Console.WriteLine("Sto Volando!!");
+        }
+
+        public int NumeroAli()
+        {
+            return 2;
+        }
 
     }
 }
