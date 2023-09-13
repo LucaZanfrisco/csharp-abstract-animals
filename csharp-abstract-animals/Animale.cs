@@ -8,11 +8,11 @@ namespace csharp_abstract_animals
 {
     public abstract class Animale
     {
-
         public void dormi()
         {
             Console.WriteLine("Zzzzzzz.....");
         }
+
         public abstract void Verso();
 
         public abstract void CosaMangia();
@@ -22,15 +22,6 @@ namespace csharp_abstract_animals
         public void StampaZampe()
         {
             Console.WriteLine($"{this.GetType().Name} ha {this.numeroZampe()} zampe \n");
-        }
-
-        public void FaiVolare(IVolante volante)
-        {
-            volante.Vola();
-        }
-        public void FaiNuotare(INuotante nuotante)
-        {
-            nuotante.Nuota();
         }
 
     }

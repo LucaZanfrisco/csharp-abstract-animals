@@ -1,7 +1,18 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 using csharp_abstract_animals;
+// FUNZIONI
 
+void FaiVolare(IVolante volante)
+{
+    volante.Vola();
+}
+void FaiNuotare(INuotante nuotante)
+{
+    nuotante.Nuota();
+}
+
+// MAIN
 Animale animale = null;
 IVolante volante = null;
 INuotante nuotante = null;
@@ -99,7 +110,7 @@ Selezionare un numero per compiere un azione : ");
                 animale.dormi();
                 break;
             case 5:
-                animale.FaiVolare(volante);
+                FaiVolare(volante);
                 break;
             case 6:
                 Console.WriteLine(volante.NumeroAli() + " ali");
@@ -134,7 +145,7 @@ Selezionare un numero per compiere un azione : ");
                 animale.dormi();
                 break;
             case 5:
-                animale.FaiNuotare(nuotante);
+                FaiNuotare(nuotante);
                 break;
             case 6:
                 Console.WriteLine(nuotante.NumeroPinne() + " pinne");
