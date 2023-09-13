@@ -10,12 +10,17 @@ namespace csharp_abstract_animals
     {
         public override void CosaMangia()
         {
-            Console.WriteLine("Carne, Croccantini, Frutta");
+            Console.WriteLine("carne, pesce, frutta, croccantini");
         }
 
         public override void Verso()
         {
             Console.WriteLine("Bau Bau!!");
+        }
+
+        public override int numeroZampe()
+        {
+            return 4;
         }
     }
 }

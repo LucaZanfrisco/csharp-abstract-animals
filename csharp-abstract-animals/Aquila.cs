@@ -13,9 +13,16 @@ namespace csharp_abstract_animals
             Console.WriteLine("volpi, lepri, marmotte, conigli selvatici e faine.");
         }
 
+        public override int numeroZampe()
+        {
+            return 2;
+        }
+
         public override void Verso()
         {
             Console.WriteLine("Graa graa!!");
         }
+
+
     }
 }

@@ -17,5 +17,12 @@ namespace csharp_abstract_animals
 
         public abstract void CosaMangia();
 
+        public abstract int numeroZampe();
+
+        public void StampaZampe()
+        {
+            Console.WriteLine($"{this.GetType().Name} ha {this.numeroZampe()} zampe \n");
+        }
+
     }
 }

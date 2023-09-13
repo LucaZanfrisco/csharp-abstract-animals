@@ -17,5 +17,10 @@ namespace csharp_abstract_animals
         {
             Console.WriteLine("Cip Cip!!");
         }
+
+        public override int numeroZampe()
+        {
+            return 2;
+        }
     }
 }

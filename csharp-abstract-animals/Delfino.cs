@@ -17,5 +17,10 @@ namespace csharp_abstract_animals
         {
             Console.WriteLine("Fiu Fiu!!");
         }
+
+        public override int numeroZampe()
+        {
+            return 0;
+        }
     }
 }
